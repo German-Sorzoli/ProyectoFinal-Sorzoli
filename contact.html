@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Enlace a Bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <!-- Enlace a la hoja de estilos personal -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Fuentes de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <!-- Configuracion media query -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>German Sorzoli - Contact</title>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <!-- Barra de navegacion -->
+            <nav id="main-nav">
+                <!-- Titulo Principal / Isologo -->
+                <a href="index.html"><h1>German<br>Sorzoli</h1></a>
+                <!-- Lista desordenada -->
+                <ul>
+                    <!-- Items de la lista + enlaces -->
+                    <li><a href="">Idioma</a></li>
+                    <li><a href="contact.html"><b>Contacto</b></a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="info.html">Acerca de mi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Principal -->
+        <main>
+            <!-- Seccion de Contacto -->
+            <section id="form-section">
+                <!-- Articulo del formulario de contacto -->
+                <article id="article-form" class="half-content">
+                    <!-- Formulario de contacto -->
+                    <form action="/submit" method="post">
+                        <label for="nombre-y-apellido">Nombre y Apellido:</label>
+                        <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" placeholder="Tu nombre y Apellido">
+
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Tu e-mail">
+
+                        <label for="consulta">Consulta:</label>
+                        <textarea type="text" name="consulta" id="consulta" placeholder="Escribime tu consulta, pongamonos en contacto "></textarea>
+
+                        <input type="submit" value="Enviar consulta">
+                    </form>
+                </article>
+                <!-- Articulo de descripcion de contacto -->
+                <article id="contact" class="half-content">
+                    <h2>Conozcamonos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer cing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna. </p>
+                </article>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <!-- Lista de enlaces -->
+             <nav>
+                <ul id="footer-list">
+                    <li><a href="">Consultas</a></li>
+                    <li><a href="">Presupuestos</a></li>
+                    <li><a href="">Legal</a></li>
+                </ul>
+                <!-- Redes sociales -->
+                <ul id="social-media">
+                    <li><a href="">Behance</a></li><li>
+                    <li><a href="">Artstation</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+                <div id="legals">
+                    <p>Copyright © 2025. Todos los derechos reservados</p>
+                </div>
+            </nav>
+        </footer>
+        <!-- Script de Bootstrap CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+</html>

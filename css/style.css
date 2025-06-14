@@ -1,0 +1,378 @@
+/* ----------Configuracion general del archivo---------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Clases comunes a todos los HTML */
+.half-content{
+width: 50%;
+}
+
+header {
+    height: 100px;
+}
+/* ----------ESTILOS PARA LA PAGINA PRINCIPAL - INDEX---------- */
+/* ----------Estilos para Header---------- */
+
+/*
+#main-nav {
+    width: 70%;
+    padding-left:15%;
+    padding-right:15%;
+}
+
+#main-nav a {
+    line-height: 80px;
+    display: block;
+    float: left;
+    padding-top:10px;
+    text-decoration: none;
+    color:darkslategray;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    line-height: 30px;
+    color:darkslategray;
+    display: block;
+    text-decoration: none;
+}
+
+#main-nav ul {
+    float:right;
+}
+#main-nav ul li {
+    display: block;
+    float:right;
+}
+
+#main-nav ul li a {
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+} */
+
+/* ----------Estilos de Main---------- */
+main section {
+    width: 100%;
+    margin-top:2%;
+    height:533px;
+}
+
+main section article {
+    display:block;
+}
+
+main section #imagen-main-01{
+    float:left;
+}
+
+main section .articulo-main-01 {
+    float:right;
+    width: 32%;
+    padding: 5% 15% 0 3%;
+    background-color:darkslategray;
+    height:453px;
+}
+
+main section .articulo-main-01 p {
+    color:white;
+    font-size: 1em;
+    padding-top:40px;
+    text-align: left;
+    line-height:1,5em;
+}
+
+#imagen-portada-01{
+    max-width: 100%;
+    height:auto;
+}
+
+h2{
+    font-size: 6em;
+    line-height:90px;
+    color:white;
+}
+
+/* ----------Estilos para el footer---------- */
+footer {
+    display:block;
+    height: 100px;
+    padding: 0 15% 0 15%;
+    background-color:rgb(197, 197, 197);
+    width: 70%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+footer nav ul {
+    width:50%;
+    height:50px;
+    padding-top: 20px;
+}
+
+footer nav ul li {
+    float:left;
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration:none;
+    font-size: 16px;
+    color:rgb(31, 31, 31);
+}
+
+footer nav #footer-list {
+    float: left;
+}
+
+footer nav #footer-list li{
+    padding-right: 30px;
+}
+
+footer nav #social-media {
+    float: right;
+}
+
+footer nav #social-media li{
+    float:right;
+    padding-left: 30px;
+}
+
+#legals p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:rgb(46, 46, 46);
+}
+
+/* ----------Estilos de Acerca de Mi---------- */
+
+main .about-me {
+    width:70%;
+    margin:0;
+    padding: 8% 15% 0 15%;
+    height: auto;
+}
+
+main section #my-info-article {
+    width: 65%;
+    display: block;
+    Float:left;
+    color:rgb(22, 22, 22);
+}
+
+main section #my-info-article h2{
+    color:rgb(22, 22, 22);
+    font-size:4em;
+}
+
+main section #my-info-article h3{
+    font-size:2em;
+    line-height:1em;
+    padding-top:20px;
+}
+
+main section #my-info-article p{
+    font-size:12px;
+    padding-top:20px;
+}
+
+main section #profile-pic{
+    display:block;
+    float:right;
+    width:35%;
+}
+
+main section #profile-pic img{
+    width:70%;
+    margin-top:20px;
+    height:auto;
+    display:block;
+    float:right;
+}
+
+.story {
+    display: block;
+    float:left;
+    width:45%;
+}
+#story-01{
+    padding-right: 5%;
+}
+
+#story-02{
+    padding-left:5%;
+}
+
+
+/* ----------Estilos de Acerca Portfolio---------- */
+
+main section .my-works, .work-description{
+    padding-left:30%;
+}
+
+.my-works{
+    background-color: darkolivegreen;
+    padding-top: 20px;
+}
+
+main section .my-works p{
+    color:white;
+    font-size:1em;
+    width:70%;
+}
+
+main section .my-works h2{
+    color:white;
+    font-size:4em;
+}
+
+.work-description{
+    padding-top:15%;
+}
+
+.work-description h3{
+    font-size:2em;
+    text-align: right;
+}
+
+.work-description p{
+    text-align: right;
+    width:80%;
+    font-size:.8em;
+    display:block;
+    float:right;
+}
+
+ #section-portfolio{
+    display: block;
+    float:left;
+ }
+
+main #section-gallery {
+    background-color: white;
+    display: block;
+    float: right;
+
+}
+ main #section-gallery #gallery{
+    width:70%;
+    display: block;
+    float: left;
+ }
+
+main #section-gallery #gallery img{
+    width:40%;
+    padding: 0 0% 5% 10%;  
+    display: block;
+    float: right;
+}
+
+/* ----------Estilos de Contacto---------- */
+
+#article-form{
+    display: block;
+    float:left;
+    background-color: rgb(255, 208, 137);
+    width:50%;
+    height:510px;
+}
+
+form{
+    width:60%;
+    display: block;
+    float:right;
+    padding-right:50px;
+    padding-top: 40px;
+}
+
+#contact h2 {
+    color:rgb(22, 22, 22);
+    font-size:4em;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color:#3f3f3f;
+}
+
+input[type=submit]{
+    margin-top:40px;
+    background-color:rgb(255, 166, 0);
+    color:white;
+    font-weight: 500;
+    width: 40%;
+    display: block;
+    float: right;
+}
+
+label{
+    font-size:.8em;
+    color: #3f3f3f;
+}
+
+textarea{
+    height:100px;
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:#3f3f3f;
+}
+
+main section #contact {
+    display: block;
+    float:right;
+    width:30%;
+    padding-right: 15%;
+    background-color: white;
+}
+
+#contact h2{
+    padding-top:40px;
+}
+
+#contact p{
+    padding-top:20px;
+    font-size:0.9em;
+}
+
+/*
+
+Estilos para las fuentes importadas desde Google Fonts
+
+-------------OSWALD-------------
+
+<weight>: Use a value from 200 to 700
+<uniquifier>: Use a unique and descriptive class name
+
+font-family: "Oswald", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+
+-------------DM SANS-------------
+
+// <weight>: Use a value from 100 to 1000
+// <uniquifier>: Use a unique and descriptive class name
+
+font-family: "DM Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+
+*/
