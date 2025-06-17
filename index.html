@@ -18,37 +18,38 @@
     <body>
         <!-- BOOTSTRAP -->
         <!-- Encabezado -->
-        <header class="container p-0">
+        <header class="container py-0 bg-white">
             <!-- Barra de navegacion -->
-            <nav class="navbar navbar-expand-lg bg-white">
-                <div class="container-fluid">
-                    <!-- Titulo Principal / Isologo -->
-                    <a class="navbar-brand" href="index.html">German<br>Sorzoli</a>
+            <nav class="navbar navbar-expand-md py-0 bg-white navbar--height">
+                <!-- Contenedor del Titulo Principal -->
+                <div class="container-fluid p-0 m-0">
+                    <!--  Isologo -->
+                    <a class="navbar-brand text-center fs-4 fw-bold my-name py-3 px-0 m-0" href="index.html">German<br>Sorzoli</a>
                     <!-- Boton diseño mobile -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>                    
                 </div>
-                <!-- Contenedor de los enlaces de la lista -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+                <!-- Contenedor de lista desordenada-->
+                <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
                     <!-- Lista desordenada -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="info.html">Acerca de mi</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <!-- Enlaces a otras paginas -->
+                         <li class="nav-item">
+                            <a class="nav-link my-0 py-3 px-4 fs-6 text-nowrap" href="info.html">Acerca de mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
+                            <a class="nav-link py-0 py-3 px-4 fs-6" href="portfolio.html">Portfolio</a>
                         </li>
-                        <!-- Boton de Idioma -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="" alt="">
+                        <li class="nav-item">
+                            <a class="nav-link py-0 py-3 px-4 fs-6" href="contact.html">Contacto</a>
+                        </li>
+                        <!-- Boton de seleccion de Idioma -->
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle py-3 my-0 px-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="" alt="">A-Z
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Español</a></li>
-                                <li><a class="dropdown-item" href="#">Inglés</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="#"><img class="navbar__country-flag me-2" src="images/bandera-argentina.png" alt="Bandera de la Republica Argentina">Español</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="#"><img class="navbar__country-flag me-2" src="images/bandera-reino-unido.png" alt="Bandera de Reino Unido">English</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -56,34 +57,36 @@
             </nav>
         </header>
         <!-- Principal -->
-        <main>
+        <main class="container-fluid m-0 p-0 main-info">
             <!-- Seccion Principal -->
-            <section>
+            <section class="row m-0">
                 <!-- Articulo -->
-                <article id="imagen-main-01" class="half-content">
+                <article id="imagen-main-01" class="col-md-6 p-0 m-0">
                     <img id="imagen-portada-01" src="images/landing-01.jpg" alt="Comunica con Diseño">
                 </article>
-                <article class="articulo-main-01" class="half-content">
-                    <h1>Texto de<br>Enganche</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </h2>
+                <!-- Articulo -->
+                <article class="articulo-main-01 col-md-6 p-0 m-0 landing-page__article">
+                    <h1 class="align-self-end">Texto de<br>Enganche</h1>
+                    <h2 class="align-self-start">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erais nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </h2>
                 </article>
             </section>
         </main>
         <!-- Footer -->
         <footer>
             <!-- Lista de enlaces -->
-             <nav>
-                <ul id="footer-list">
+             <nav class="container-fluid">
+                <ul id="footer-list" class="px-0">
                     <li><a href="">Consultas</a></li>
                     <li><a href="">Presupuestos</a></li>
                     <li><a href="">Legal</a></li>
                 </ul>
                 <!-- Redes sociales -->
-                <ul id="social-media">
-                    <li><a href="">Behance</a></li><li>
+                <ul id="social-media" class="px-0">
+                    <li><a href="">Behance</a></li>
                     <li><a href="">Artstation</a></li>
                     <li><a href="">LinkedIn</a></li>
                 </ul>
+                <!-- Legales -->
                 <div id="legals">
                     <p>Copyright © 2025. Todos los derechos reservados</p>
                 </div>
