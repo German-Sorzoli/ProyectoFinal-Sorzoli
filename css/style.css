@@ -364,13 +364,13 @@ main section #contact {
     main section .articulo-main-01{
         height:auto;
     }
-  .main__info section .landing-page__article h1{
+    main section .landing-page__article h1{
        text-align:center;
        font-size: 4em;
        line-height: 1em;
        padding: 1em 0 0 0;
     }
-    .main__info section .landing-page__article h2{
+    main section .landing-page__article h2{
         padding:2em;
         padding-bottom:4em;
         text-wrap: stable;
