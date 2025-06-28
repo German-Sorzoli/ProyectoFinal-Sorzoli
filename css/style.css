@@ -1,609 +1,324 @@
-/* ----------Configuracion general del archivo---------- */
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: "DM Sans", sans-serif;
-}
-/* Clases comunes a todos los HTML */
-
-/* ----------ESTILOS PARA LA PAGINA PRINCIPAL - INDEX---------- */
-
-/* ----------Estilos para Header---------- */
-
-.navbar--height{
-    height: 12vh;
-    min-height: 10vh;
+/*RESET*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
 }
 
-.navbar__country-flag{
-    height:20px;
-    width:30px;
+/*Estilos de HEADER*/
+header .navbar--height {
+  height: 12vh;
+  min-height: 10vh;
 }
 
-header nav div .my-name {
-    font-family: "Oswald", sans-serif;
-    text-transform:uppercase;
-    line-height: 1.3em;
-    color:darkslategray;
+header .navbar--height div .my-name {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  color: darkslategray;
 }
 
-/* -------Estilos de Main - INDEX------- */
-
-.main-info{
-    height:auto;
+header .navbar--height div ul li .navbar__country-flag {
+  height: 20px;
+  width: 30px;
 }
 
-main section {
-    height:80vh;
+/*Estilos de MAIN*/
+.main-info {
+  height: auto;
 }
 
-main section article h1 {
+.main-info section {
+  height: 80vh;
+}
+
+.main-info section article #imagen-portada-01 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-info section article h1 {
+  display: block;
+  font-size: 6em;
+  line-height: 6rem;
+  color: white;
+  font-weight: bold;
+  padding: 0 20% 1rem 5vw;
+}
+
+.main-info section article h2 {
+  padding: 0 20% 1rem 5vw;
+}
+
+.main-info section .landing-page__article {
+  display: grid;
+  align-items: center;
+}
+
+.main-info section .landing-page__article h2 {
+  font-size: 1em;
+  line-height: 1.5rem;
+  color: white;
+  align-items: normal;
+}
+
+.main-info section .articulo-main-01 {
+  background-color: darkslategray;
+  height: 80vh;
+}
+
+.main-info section .articulo-main-01 p {
+  color: white;
+  font-size: 1em;
+  padding-top: 40px;
+  text-align: left;
+  line-height: 1, 5em;
+  box-sizing: border-box;
+}
+
+/*Media Query MAIN*/
+@media only screen and (max-width: 992px) {
+  main section .articulo-main-01 {
+    height: auto;
+  }
+  main section .landing-page__article h1 {
+    text-align: center;
+    font-size: 4em;
+    line-height: 1em;
+    padding: 1em 0 0 0;
+  }
+  main section .landing-page__article h2 {
+    padding: 2em;
+    padding-bottom: 4em;
+    text-wrap: stable;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main__info {
+    height: auto;
     display: block;
-    font-size: 6em;
-    line-height:6rem;
-    color:white;
-    font-weight: bold;
-}
-
-main section .landing-page__article{
-    display:grid;
-    align-items: center;
-}
-
-main section .landing-page__article h2{
-    font-size: 1em;
-    line-height:1.5rem;
-    color:white;
-    align-items: normal;
-}
-
-main section article h1,h2 {
-    padding: 0 20% 1rem 5vw;
-}
-
-main section .articulo-main-01 {
-    background-color:darkslategray;
-    height:80vh;
-}
-
-main section .articulo-main-01 p {
-    color:white;
-    font-size: 1em;
-    padding-top:40px;
-    text-align: left;
-    line-height:1,5em;
     box-sizing: border-box;
+  }
+  .main__info section {
+    height: auto;
+  }
+  section #imagen-main-01 {
+    height: 50%;
+  }
 }
-
-#imagen-portada-01{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* ----------Estilos para el footer---------- */
-
+/*Estilos de FOOTER*/
 footer {
-    width: 100%;
-    height: 10vh;
-    padding: 0 15% 0 15%;
-    background-color:rgb(197, 197, 197);
-    position:absolute;
-    bottom:0;
-    left:0;
+  width: 100%;
+  height: 10vh;
+  padding: 0 15% 0 15%;
+  background-color: rgb(197, 197, 197);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer nav {
-    display:block;
+  display: block;
 }
 
 footer nav ul {
-    width:50%;
-    height:50px;
-    padding-top: 20px;
+  width: 50%;
+  height: 50px;
+  padding-top: 20px;
 }
 
 footer nav ul li {
-    float:left;
-    list-style: none;
+  float: left;
+  list-style: none;
 }
 
 footer nav ul li a {
-    text-decoration:none;
-    font-size: 16px;
-    color:rgb(31, 31, 31);
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(31, 31, 31);
 }
 
 footer nav #footer-list {
-    float: left;
+  float: left;
 }
 
-footer nav #footer-list li{
-    padding-right: 30px;
+footer nav #footer-list li {
+  padding-right: 30px;
 }
 
 footer nav #social-media {
-    float: right;
+  float: right;
 }
 
-footer nav #social-media li{
-    float:right;
-    padding-left: 30px;
+footer nav #social-media li {
+  float: right;
+  padding-left: 30px;
 }
 
-#legals p {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color:rgb(46, 46, 46);
+footer nav #legals p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgb(46, 46, 46);
 }
 
-/* ----------FIN DE ESTILOS PARA LA PAGINA PRINCIPAL - INDEX---------- */
-
-/* ----------Estilos de Acerca de Mi---------- */
-
-.personal-info{
-    width:100%;
+/*Media Query de FOOTER*/
+@media only screen and (max-width: 992px) {
+  footer {
+    position: fixed;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    display: block;
+    float: left;
+    position: static;
+    height: auto;
+    padding: 10% 0 0 0;
+  }
+  footer nav {
+    padding: 0;
+  }
+  footer nav ul {
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  footer nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+  }
+  footer nav ul li a {
+    font-size: 1em;
+    padding: 0;
+  }
+  footer nav #footer-list {
+    margin: 0;
+  }
+  footer nav #footer-list li {
+    padding-right: 0;
+  }
+  footer nav #social-media {
+    padding-bottom: 2em;
+  }
+  footer nav #social-media li {
+    padding-left: 0;
+  }
+  footer #legals {
+    display: block;
+    text-align: center;
+  }
+}
+/*Estilos de ACERCA DE MI*/
+.personal-info {
+  width: 100%;
 }
 
 .personal-info .personal-info__about-me {
-    width:70%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: white;
+  width: 70%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
 }
 
-.personal-info .personal-info__about-me h1{
-    color:rgb(22, 22, 22);
-    font-size:4em;
-    font-weight: initial;
-    margin:0;
-    padding:0;
-    grid-row:1;
-    grid-column:1/3;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    align-self:self-end;
+.personal-info .personal-info__about-me h1 {
+  color: rgb(22, 22, 22);
+  font-size: 4em;
+  font-weight: initial;
+  margin: 0;
+  padding: 0;
+  grid-row: 1;
+  grid-column: 1/3;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  align-self: self-end;
 }
 
-.personal-info .personal-info__about-me h2{
-    font-size:2em;
-    line-height:1em;
-    margin:0;
-    padding:0;
-    grid-row:2;
-    grid-column:1/3;
+.personal-info .personal-info__about-me h2 {
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  grid-row: 2;
+  grid-column: 1/3;
 }
 
-.personal-info .personal-info__about-me #story-01{
-    grid-row:3;
-    grid-column:1/2;
+.personal-info .personal-info__about-me #story-01 {
+  grid-row: 3;
+  grid-column: 1/2;
 }
 
-.personal-info .personal-info__about-me #story-02{
-    grid-row:3;
-    grid-column:2/3;
+.personal-info .personal-info__about-me #story-02 {
+  grid-row: 3;
+  grid-column: 2/3;
 }
 
-.personal-info .personal-info__about-me .story{
-    font-size:.7em;
-    padding: 0 2rem;
-    align-self:self-start;
+.personal-info .personal-info__about-me .story {
+  font-size: 0.7em;
+  padding: 0 2rem;
+  align-self: self-start;
 }
 
-.personal-info .personal-info__about-me img{
-    width:80%;
-    grid-row:1/4;
-    grid-column:3;
-    align-self:center;
-    justify-self: right;
+.personal-info .personal-info__about-me img {
+  width: 80%;
+  grid-row: 1/4;
+  grid-column: 3;
+  align-self: center;
+  justify-self: right;
 }
 
-/* ----Fin de Estilos de Acerca de Mi------ */
-
-/* ----------Estilos de Portfolio---------- */
-
- main #section-portfolio{
-    display: block;
-    float:left;
- }
-
-main section .my-works, .work-description{
-    padding-left:30%;
-}
-
-main #section-portfolio .my-works{
-    background-color: darkolivegreen;
-    padding-top: 20px;
-}
-
-main #section-portfolio .my-works p{
-    color:white;
-    font-size:1em;
-    width:70%;
-}
-
-main #section-portfolio .my-works h1{
-    color:white;
-    font-size:4em;
-    font-weight: initial;
-}
-
-main #section-portfolio .work-description{
-    padding-top:15%;
-}
-
-main #section-portfolio .work-description h2{
-    font-size:2em;
-    text-align: right;
-    margin:0;
-    padding: 0 0 .8em 0;
-}
-
-main #section-portfolio .work-description p{
-    text-align: right;
-    width:80%;
-    font-size:.8em;
-    display:block;
-    float:right;
-}
-
-main #section-gallery{
-    height:80vh;
-    background-color: white;
-}
-
-main #section-gallery #gallery{
-    padding-left:3em;
-    padding-right:25%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    gap:3em;
-    height:auto;
- }
-
-main #section-gallery #gallery .gallery__img{
-    display: flex;
-    align-items:center;
-    justify-content:center;
-}
-
-main #section-gallery #gallery .gallery__img img{
-    width:80%;
-}
-
-/* ------Fin de Estilos de Portfolio------ */
-
-/* ----------Estilos de Contacto---------- */
-
-#article-form{
-    display: block;
-    float:left;
-    background-color: rgb(255, 208, 137);
-    width:50%;
-    height:80vh;
-}
-
-form{
-    width:60%;
-    display: block;
-    float:right;
-    padding-right:50px;
-    padding-top: 40px;
-}
-
-#contact h1 {
-    color:rgb(22, 22, 22);
-    font-size:4em;
-    font-weight: initial;
-}
-
-input, select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color:#3f3f3f;
-}
-
-input[type=submit]{
-    margin-top:40px;
-    background-color:rgb(255, 166, 0);
-    color:white;
-    font-weight: 500;
-    width: 40%;
-    min-width: 200px;
-    display: block;
-    float: right;
-}
-
-label{
-    font-size:.8em;
-    color: #3f3f3f;
-}
-
-textarea{
-    height:25vh;
-    width:100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color:#3f3f3f;
-}
-
-main section #contact {
-    display: block;
-    float:right;
-    background-color: white;
-}
-
-#contact h1{
-    padding-top:.7em;
-}
-
-#contact p{
-    font-size:0.9em;
-    padding-left: 5vw;
-    padding-right:25%;
-}
-
-/* ------Fin de Estilos de Contacto------ */
-
-/* MEDIA QUERY */
-
-/* Media Query INDEX */
-
+/*Media Qery de ACERCA DE MI*/
 @media only screen and (max-width: 992px) {
-    main section .articulo-main-01{
-        height:auto;
-    }
-    main section .landing-page__article h1{
-       text-align:center;
-       font-size: 4em;
-       line-height: 1em;
-       padding: 1em 0 0 0;
-    }
-    main section .landing-page__article h2{
-        padding:2em;
-        padding-bottom:4em;
-        text-wrap: stable;
-    }
-    footer {
-    position:fixed;
-    }
-  }
-
-@media only screen and (max-width: 768px) {
-    .main__info{
-        height:auto;
-        display: block;
-        box-sizing: border-box;
-    }
-    #imagen-main-01{
-        height:50%;
-    }
-    main section {
-    height:auto;
-    }
-    footer {
-        display:block;
-        float:left;
-        position:static;
-        height:auto;
-        padding: 10% 0 0 0;
-    }
-    footer nav{
-        padding: 0;
-    }
-    footer nav ul{
-        display:block;
-        float:left;
-        height:auto;
-        width: 100%;
-        padding:0;
-    }
-    footer nav ul li{
-        width: 100%;
-        text-align:center;
-        padding:1em 0;
-        
-    }
-    footer nav ul li a{
-    font-size:1em;
-    padding:0;
-    }
-    footer #legals{
-        display: block;
-        text-align: center;
-    }
-    footer nav #footer-list{
-        margin:0;
-    }
-    footer nav #footer-list li {
-    padding-right: 0;
-    }
-    footer nav #social-media {
+  .personal-info .personal-info__about-me {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr;
     padding-bottom: 2em;
-    }
-    footer nav #social-media li {
-    padding-left: 0;
-    }
-}
-
-/* Fin de Media Query INDEX*/
-
-/* Media Query ACERCA DE MI */
-
-@media only screen and (max-width: 992px) {
-    .personal-info .personal-info__about-me {
-        width:100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 0fr 0fr;
-        padding-bottom:2em;
-    }
-    .personal-info .personal-info__about-me h1{
-        font-size:3rem;
-        padding:.5em;
-        text-align:center;
-        max-width: 100%;
-        grid-row:1;
-        position: static;
-    }
-    .personal-info .personal-info__about-me h2{
-        font-size:1em;
-        line-height:1em;
-        padding:1em 2em;
-        text-align: center;
-        grid-row:2;
-        grid-column:1;
-    }
-    .personal-info .personal-info__about-me #story-01{
-        grid-row:4;
-        grid-column:1;
-    }
-    .personal-info .personal-info__about-me #story-02{
-        grid-row:5;
-        grid-column:1;
-        padding-bottom:5em;
-    }
-    .personal-info .personal-info__about-me img{
-        width:70%;
-        grid-row:3;
-        grid-column:1;
-        align-self:center;
-        justify-self: center;
-        padding: 1em 2em;
-    }
-    .personal-info .personal-info__about-me .story{
-        font-size:.9em;
-        padding:2em;
-        line-height: 1em;
-    }
-}
-
-/* Fin de Media Query ACERCA DE MI*/
-
-/* Media Query PORTFOLIO */
-
-@media only screen and (max-width: 992px) {
-    main section .my-works, .work-description{
-        padding:0;
-    }
-    .my-works{
-        padding:0;
-    }
-    main #section-portfolio .my-works h1{
-        font-size:3em;
-        text-align: center;
-        padding:1em 0 0 0;
-        margin:0;
-    }
-    main #section-portfolio .my-works p{
-        font-size:1em;
-        width:100%;
-        padding:1em 2em;
-    }
-    .work-description{
-        padding:1em;
-        height:auto;
-    }
-    main #section-portfolio .work-description h2{
-        font-size:2em;
-        text-align: center;
-        padding: 0 0 1em 0;
-    }
-    main #section-portfolio .work-description p{
-        text-align: center;
-        width:100%;
-        font-size:1em;
-        padding: 1em;
-    }
-    main #section-gallery{
-        height:auto;
-    }
-    main #section-gallery #gallery{
-        padding:2em 0 4em 0;
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap:3em;
-        height:auto;
-    }
-    main #section-gallery #gallery .gallery__img{
-    }
-    main #section-gallery #gallery .gallery__img img{
-        width:80%;
-    }
-}
-
-/* Fin de Media Query PORTFOLIO*/
-
-/* Media Query CONTACTO */
-
-@media only screen and (max-width: 992px) {
-    main #form-section #article-form {
-    height: auto;
-    }
-    main #form-section #article-form form {
-    width: 100%;
-    height: auto;
-    padding:1em;
-    }
-    main #form-section #contact{
-        padding-bottom:2em;
-    }
-    main #form-section #contact h1{
-        font-size:2.5em;
-        text-align: center;
-        padding: 1em;
-        margin:0;
-    }
-    main #form-section #contact p{
-    padding-bottom:2em;
+  }
+  .personal-info .personal-info__about-me h1 {
+    font-size: 3rem;
+    padding: 0.5em;
+    text-align: center;
+    max-width: 100%;
+    grid-row: 1;
+    position: static;
+  }
+  .personal-info .personal-info__about-me h2 {
     font-size: 1em;
-    padding: 0 2em 2em 2em;
-    }
-    input[type=submit]{
-    margin: 2em 0;
-    width: 100%;
-    }
+    line-height: 1em;
+    padding: 1em 2em;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .personal-info .personal-info__about-me #story-01 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .personal-info .personal-info__about-me #story-02 {
+    grid-row: 5;
+    grid-column: 1;
+    padding-bottom: 5em;
+  }
+  .personal-info .personal-info__about-me img {
+    width: 70%;
+    grid-row: 3;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    padding: 1em 2em;
+  }
+  .personal-info .personal-info__about-me .story {
+    font-size: 0.9em;
+    padding: 2em;
+    line-height: 1em;
+  }
 }
 
-/* Fin de Media Query CONTACTO*/
-
-
-/* ******************** */
-
-
-/*Estilos para las fuentes importadas desde Google Fonts
-
--------------OSWALD-------------
-
-<weight>: Use a value from 200 to 700
-<uniquifier>: Use a unique and descriptive class name
-
-font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-
--------------DM SANS-------------
-
-// <weight>: Use a value from 100 to 1000
-// <uniquifier>: Use a unique and descriptive class name
-
-font-family: "DM Sans", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-
-*/
+/*# sourceMappingURL=style.css.map */

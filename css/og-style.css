@@ -1,4 +1,4 @@
-/* ----------Configuracion general del archivo---------- */
+/* ----------Configuracion general del archivo----------
 *{
     margin: 0px;
     padding: 0px;
@@ -9,7 +9,7 @@
 /* ----------ESTILOS PARA LA PAGINA PRINCIPAL - INDEX---------- */
 
 /* ----------Estilos para Header---------- */
-
+/*
 .navbar--height{
     height: 12vh;
     min-height: 10vh;
@@ -28,7 +28,7 @@ header nav div .my-name {
 }
 
 /* -------Estilos de Main - INDEX------- */
-
+/*
 .main-info{
     height:auto;
 }
@@ -80,9 +80,9 @@ main section .articulo-main-01 p {
     height: 100%;
     object-fit: cover;
 }
-
+*/
 /* ----------Estilos para el footer---------- */
-
+/*
 footer {
     width: 100%;
     height: 10vh;
@@ -136,11 +136,11 @@ footer nav #social-media li{
     font-size: 12px;
     color:rgb(46, 46, 46);
 }
-
+*/
 /* ----------FIN DE ESTILOS PARA LA PAGINA PRINCIPAL - INDEX---------- */
 
 /* ----------Estilos de Acerca de Mi---------- */
-
+/*
 .personal-info{
     width:100%;
 }
@@ -198,7 +198,7 @@ footer nav #social-media li{
     grid-column:3;
     align-self:center;
     justify-self: right;
-}
+}*/
 
 /* ----Fin de Estilos de Acerca de Mi------ */
 
@@ -359,7 +359,7 @@ main section #contact {
 /* MEDIA QUERY */
 
 /* Media Query INDEX */
-
+/*
 @media only screen and (max-width: 992px) {
     main section .articulo-main-01{
         height:auto;
@@ -374,12 +374,13 @@ main section #contact {
         padding:2em;
         padding-bottom:4em;
         text-wrap: stable;
-    }
+    }*/
+    /*
     footer {
     position:fixed;
     }
-  }
-
+  }*/
+/*
 @media only screen and (max-width: 768px) {
     .main__info{
         height:auto;
@@ -391,7 +392,8 @@ main section #contact {
     }
     main section {
     height:auto;
-    }
+    }*/
+    /*
     footer {
         display:block;
         float:left;
@@ -435,12 +437,12 @@ main section #contact {
     footer nav #social-media li {
     padding-left: 0;
     }
-}
+}*/
 
 /* Fin de Media Query INDEX*/
 
 /* Media Query ACERCA DE MI */
-
+/*
 @media only screen and (max-width: 992px) {
     .personal-info .personal-info__about-me {
         width:100%;
@@ -487,7 +489,7 @@ main section #contact {
         padding:2em;
         line-height: 1em;
     }
-}
+}*/
 
 /* Fin de Media Query ACERCA DE MI*/
 
@@ -537,8 +539,6 @@ main section #contact {
         grid-template-rows: 1fr;
         gap:3em;
         height:auto;
-    }
-    main #section-gallery #gallery .gallery__img{
     }
     main #section-gallery #gallery .gallery__img img{
         width:80%;
