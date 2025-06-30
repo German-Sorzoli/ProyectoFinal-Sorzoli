@@ -1,4 +1,5 @@
 /*Estilos de ACERCA DE MI*/
+@use "../abstracts/variables" as *;
 .personal-info{
     width:100%;
     .personal-info__about-me {
@@ -50,7 +51,7 @@
         }
     }
 }
-/*Media Qery de ACERCA DE MI*/
+/*Media Query de ACERCA DE MI*/
 @media only screen and (max-width: 992px) {
     .personal-info{
         .personal-info__about-me {

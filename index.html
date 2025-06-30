@@ -57,18 +57,46 @@
             </nav>
         </header>
         <!-- Principal -->
+        <!-- Carrusel -->
         <main class="container-fluid m-0 p-0 main-info">
-            <!-- Seccion Principal -->
-            <section class="row m-0">
-                <!-- Articulo -->
-                <article id="imagen-main-01" class="col-md-6 p-0 m-0">
-                    <img id="imagen-portada-01" src="images/landing-01.jpg" alt="Comunica con Diseño">
+            <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <article class="carousel-inner">
+                    <div class="carousel-item carousel-block active">
+                        <div id="carousel-img-01" class="carousel-half carousel-image m-0 p-0"></div>
+                        <div id="carousel-txt-01" class="carousel-half carousel-text m-0 p-0">
+                            <h1>Soluciona<br>tus diseños</h1>
+                            <h3>Transformemos tus ideas en imágenes impactantes y efectivas. Desde branding hasta material publicitario. Soluciones creativas que elevan tu marca y potencian tu mensaje. </h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-block">
+                        <div id="carousel-txt-02" class="carousel-half carousel-text m-0 p-0">
+                            <h2>Estiliza<br>tus proyectos</h2>
+                            <h3>Diseñemos sitios web modernos, intuitivos y adaptados a tus necesidades. Mejoraré tu experiencia de usuario y optimizaré la presentación. Tu proyecto, impecable y funcional. </h3>
+                        </div>
+                        <div id="carousel-img-02" class="carousel-half carousel-image m-0 p-0"></div>
+
+                    </div>
+                    <div class="carousel-item carousel-block">
+                        <div id="carousel-img-03" class="carousel-half carousel-image m-0 p-0"></div>
+                        <div id="carousel-txt-03" class="carousel-half carousel-text m-0 p-0">
+                            <h2>Realiza<br>tus ideas</h2>
+                            <h3>Daré vida a tus conceptos con modelado 3D de alta calidad. Crecion de visuales detalladas únicas que destacaran tu innovación en cualquier industria. </h3>
+                        </div>
+                    </div>
                 </article>
-                <!-- Articulo -->
-                <article class="articulo-main-01 col-md-6 p-0 m-0 landing-page__article">
-                    <h1 class="align-self-end">Texto de<br>Enganche</h1>
-                    <h2 class="align-self-start">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erais nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </h2>
-                </article>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </section>
         </main>
         <!-- Footer -->

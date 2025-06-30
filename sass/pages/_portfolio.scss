@@ -1,0 +1,119 @@
+/* ----------Estilos de Portfolio---------- */
+@use "../abstracts/variables" as *;
+main{
+    #section-portfolio{
+        display: block;
+        float:left;
+        .my-works{
+            background-color: $secondary-color;
+            padding-top: 20px;
+            padding-left:30%;
+            p{
+                color:white;
+                font-size:1em;
+                width:70%;
+            }
+            h1{
+                color:white;
+                font-size:4em;
+                font-weight: initial;
+            }
+        }
+        .work-description{
+            padding-top:15%;
+            padding-left:30%;
+            h2{
+                font-size:2em;
+                text-align: right;
+                margin:0;
+                padding: 0 0 .8em 0;
+            }
+            p{
+                text-align: right;
+                width:80%;
+                font-size:.8em;
+                display:block;
+                float:right;
+            }
+        }
+    }
+    #section-gallery{
+        height:80vh;
+        background-color: white;
+        #gallery{
+            padding-left:3em;
+            padding-right:25%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50% 50%;
+            gap:3em;
+            height:auto;
+            .gallery__img{
+                display: flex;
+                align-items:center;
+                justify-content:center;
+                img{
+                    width:80%;
+                }
+            }
+        }
+    }
+ }
+/*Media Query de PORTFOLIO*/
+ @media only screen and (max-width: 992px) {
+    main{
+        #section-portfolio{
+            .work-description{
+                    padding:2em;
+                    height:auto;
+                    h2{
+                            font-size:2em;
+                            text-align: center;
+                            padding: 0 0 1em 0;
+                    }
+                    p{
+                        text-align: center;
+                        width:100%;
+                        font-size:1em;
+                        padding: 1em;
+                    }
+                }
+            .my-works{
+                padding:0;
+                h1{
+                    font-size:3em;
+                    text-align: center;
+                    padding:1em 0 0 0;
+                    margin:0;
+                }
+                p{
+                    font-size:1em;
+                    width:100%;
+                    padding:1em 2em;
+                }
+                .work-description{
+                    padding:2em;
+                    height:auto;
+                }
+            }
+            
+        }
+        #section-gallery{
+            height:auto;
+            #gallery{
+                padding:2em 0 4em 0;
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                gap:3em;
+                height:auto;
+                .gallery__img{
+                    img{
+                        width:80%;
+                    }
+                }
+            }
+        }
+    }
+ }

@@ -23,6 +23,10 @@ header .navbar--height div ul li .navbar__country-flag {
   width: 30px;
 }
 
+header .navbar--height #navbarSupportedContent {
+  z-index: 1050;
+}
+
 /*Estilos de MAIN*/
 .main-info {
   height: auto;
@@ -32,79 +36,133 @@ header .navbar--height div ul li .navbar__country-flag {
   height: 80vh;
 }
 
-.main-info section article #imagen-portada-01 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.main-info section article {
+  height: 80vh;
 }
 
-.main-info section article h1 {
-  display: block;
-  font-size: 6em;
-  line-height: 6rem;
+.main-info section article .carousel-block {
+  width: 100%;
+}
+
+.main-info section article .carousel-block .carousel-half {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.main-info section article .carousel-block .carousel-image {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.main-info section article .carousel-block #carousel-img-01 {
+  background-image: url(../images/landing-01.jpg);
+}
+
+.main-info section article .carousel-block #carousel-img-02 {
+  background-image: url(../images/landing-02.jpg);
+}
+
+.main-info section article .carousel-block #carousel-img-03 {
+  background-image: url(../images/landing-03.jpg);
+}
+
+.main-info section article .carousel-block .carousel-text {
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main-info section article .carousel-block .carousel-text h1, .main-info section article .carousel-block .carousel-text h2 {
+  font-size: 5em;
+  line-height: 5rem;
+  color: white;
+  text-align: left;
   font-weight: bold;
   padding: 0 20% 1rem 5vw;
 }
 
-.main-info section article h2 {
+.main-info section article .carousel-block .carousel-text h3 {
+  font-size: 1.5em;
+  line-height: 2rem;
+  color: white;
+  text-align: left;
+  font-weight: regular;
   padding: 0 20% 1rem 5vw;
 }
 
-.main-info section .landing-page__article {
-  display: grid;
-  align-items: center;
+.main-info section article .carousel-block #carousel-txt-01 {
+  background-color: rgb(46, 136, 136);
 }
 
-.main-info section .landing-page__article h2 {
-  font-size: 1em;
-  line-height: 1.5rem;
-  color: white;
-  align-items: normal;
+.main-info section article .carousel-block #carousel-txt-02 {
+  background-color: rgb(40, 160, 76);
 }
 
-.main-info section .articulo-main-01 {
-  background-color: darkslategray;
-  height: 80vh;
-}
-
-.main-info section .articulo-main-01 p {
-  color: white;
-  font-size: 1em;
-  padding-top: 40px;
-  text-align: left;
-  line-height: 1, 5em;
-  box-sizing: border-box;
+.main-info section article .carousel-block #carousel-txt-03 {
+  background-color: rgb(23, 82, 190);
 }
 
 /*Media Query MAIN*/
 @media only screen and (max-width: 992px) {
-  main section .articulo-main-01 {
-    height: auto;
+  .main-info section {
+    height: 80vh;
   }
-  main section .landing-page__article h1 {
-    text-align: center;
+  .main-info section article .carousel-block .carousel-half h1, .main-info section article .carousel-block .carousel-half h2 {
     font-size: 4em;
-    line-height: 1em;
-    padding: 1em 0 0 0;
+    line-height: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: regular;
+    padding: 1em;
   }
-  main section .landing-page__article h2 {
-    padding: 2em;
-    padding-bottom: 4em;
+  .main-info section article .carousel-block .carousel-half h3 {
+    font-size: 1em;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 2em 1em 2em;
     text-wrap: stable;
   }
 }
 @media only screen and (max-width: 768px) {
-  .main__info {
-    height: auto;
-    display: block;
-    box-sizing: border-box;
-  }
-  .main__info section {
+  .main-info section {
     height: auto;
   }
-  section #imagen-main-01 {
+  .main-info section article {
+    height: auto;
+  }
+  .main-info section article .carousel-block .carousel-half {
+    width: 100%;
     height: 50%;
+  }
+  .main-info section article .carousel-block .carousel-image {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+  }
+  .main-info section article .carousel-block .carousel-text {
+    box-sizing: border-box;
+    height: auto;
+  }
+  .main-info section article .carousel-block .carousel-text h1, .main-info section article .carousel-block .carousel-text h2 {
+    font-size: 3em;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: regular;
+  }
+  .main-info section article .carousel-block .carousel-text h3 {
+    font-size: 1em;
+    line-height: 1.5rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 4em;
   }
 }
 /*Estilos de FOOTER*/
@@ -159,7 +217,7 @@ footer nav #social-media li {
 footer nav #legals p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: rgb(46, 46, 46);
+  color: rgb(31, 31, 31);
 }
 
 /*Media Query de FOOTER*/
@@ -272,7 +330,7 @@ footer nav #legals p {
   justify-self: right;
 }
 
-/*Media Qery de ACERCA DE MI*/
+/*Media Query de ACERCA DE MI*/
 @media only screen and (max-width: 992px) {
   .personal-info .personal-info__about-me {
     width: 100%;
@@ -318,6 +376,236 @@ footer nav #legals p {
     font-size: 0.9em;
     padding: 2em;
     line-height: 1em;
+  }
+}
+/* ----------Estilos de Portfolio---------- */
+main #section-portfolio {
+  display: block;
+  float: left;
+}
+
+main #section-portfolio .my-works {
+  background-color: rgb(40, 160, 76);
+  padding-top: 20px;
+  padding-left: 30%;
+}
+
+main #section-portfolio .my-works p {
+  color: white;
+  font-size: 1em;
+  width: 70%;
+}
+
+main #section-portfolio .my-works h1 {
+  color: white;
+  font-size: 4em;
+  font-weight: initial;
+}
+
+main #section-portfolio .work-description {
+  padding-top: 15%;
+  padding-left: 30%;
+}
+
+main #section-portfolio .work-description h2 {
+  font-size: 2em;
+  text-align: right;
+  margin: 0;
+  padding: 0 0 0.8em 0;
+}
+
+main #section-portfolio .work-description p {
+  text-align: right;
+  width: 80%;
+  font-size: 0.8em;
+  display: block;
+  float: right;
+}
+
+main #section-gallery {
+  height: 80vh;
+  background-color: white;
+}
+
+main #section-gallery #gallery {
+  padding-left: 3em;
+  padding-right: 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  gap: 3em;
+  height: auto;
+}
+
+main #section-gallery #gallery .gallery__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #section-gallery #gallery .gallery__img img {
+  width: 80%;
+}
+
+/*Media Query de PORTFOLIO*/
+@media only screen and (max-width: 992px) {
+  main #section-portfolio .work-description {
+    padding: 2em;
+    height: auto;
+  }
+  main #section-portfolio .work-description h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 0 1em 0;
+  }
+  main #section-portfolio .work-description p {
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    padding: 1em;
+  }
+  main #section-portfolio .my-works {
+    padding: 0;
+  }
+  main #section-portfolio .my-works h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0 0 0;
+    margin: 0;
+  }
+  main #section-portfolio .my-works p {
+    font-size: 1em;
+    width: 100%;
+    padding: 1em 2em;
+  }
+  main #section-portfolio .my-works .work-description {
+    padding: 2em;
+    height: auto;
+  }
+  main #section-gallery {
+    height: auto;
+  }
+  main #section-gallery #gallery {
+    padding: 2em 0 4em 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 3em;
+    height: auto;
+  }
+  main #section-gallery #gallery .gallery__img img {
+    width: 80%;
+  }
+}
+/*Estilos de CONTACT*/
+main #form-section #contact {
+  display: block;
+  float: right;
+  background-color: white;
+}
+
+main #form-section #contact h1 {
+  font-size: 4em;
+  line-height: 5rem;
+  color: rgb(31, 31, 31);
+  text-align: left;
+  font-weight: initial;
+  padding: 0.7em 0 0 5%;
+}
+
+main #form-section #contact p {
+  font-size: 1em;
+  line-height: 2rem;
+  color: rgb(31, 31, 31);
+  text-align: left;
+  font-weight: initial;
+  padding: 0 25% 0 5%;
+}
+
+main #form-section #article-form {
+  display: block;
+  float: left;
+  background-color: rgb(46, 136, 136);
+  width: 50%;
+  height: 80vh;
+}
+
+main #form-section #article-form form {
+  width: 60%;
+  display: block;
+  float: right;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+
+main #form-section #article-form form input, main #form-section #article-form form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3f3f3f;
+}
+
+main #form-section #article-form form input[type=submit] {
+  margin-top: 40px;
+  background-color: darkslategray;
+  color: white;
+  font-weight: 500;
+  width: 40%;
+  min-width: 200px;
+  display: block;
+  float: right;
+}
+
+main #form-section #article-form form label {
+  font-size: 0.8em;
+  color: white;
+}
+
+main #form-section #article-form form textarea {
+  height: 25vh;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3f3f3f;
+}
+
+/*Media Query de CONTACT*/
+@media only screen and (max-width: 992px) {
+  main #form-section #contact {
+    padding-bottom: 2em;
+  }
+  main #form-section #contact h1 {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+  }
+  main #form-section #contact p {
+    padding-bottom: 2em;
+    font-size: 1em;
+    padding: 0 2em 2em 2em;
+  }
+  main #form-section #article-form form {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+  main #form-section #article-form form input[type=submit] {
+    margin: 2em 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #article-form {
+    height: auto;
   }
 }
 

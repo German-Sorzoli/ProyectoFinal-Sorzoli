@@ -1,0 +1,9 @@
+//MIXIN
+
+@mixin text-set ($size, $line, $color, $align, $weight){
+    font-size:$size;
+    line-height: $line;
+    color:$color;
+    text-align: $align;
+    font-weight: $weight;
+}
