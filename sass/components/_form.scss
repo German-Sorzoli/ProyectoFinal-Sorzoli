@@ -7,7 +7,7 @@ main{
             float:left;
             background-color: $primary-color;
             width:50%;
-            height:80vh;
+            height:$main-height;
             form{
                 width:60%;
                 display: block;
@@ -15,19 +15,20 @@ main{
                 padding-right:50px;
                 padding-top: 40px;
                 input, select {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                color:$text-color-secondary;
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    color:$text-color-secondary;
                 }
                 input[type=submit]{
+                    @include text-set (1em,2em,$text-color-terciary,center,initial);
                     margin-top:40px;
                     background-color:$logo-color;
-                    color:$text-color-Primary;
+                    color:$text-color-primary;
                     font-weight: 500;
                     width: 40%;
                     min-width: 200px;
@@ -35,10 +36,10 @@ main{
                     float: right;
                 }
                 label{
-                    font-size:.8em;
-                    color: $text-color-Primary;
+                    @include text-set (.8em,1em,$text-color-primary,left,initial);
                 }
                 textarea{
+                    @include text-set (1em,1.5em,$text-color-secondary,left,initial);
                     height:25vh;
                     width:100%;
                     padding: 12px 20px;
@@ -46,7 +47,6 @@ main{
                     border: 1px solid #ccc;
                     border-radius: 4px;
                     box-sizing: border-box;
-                    color:$text-color-secondary;
                 }
             }
         }

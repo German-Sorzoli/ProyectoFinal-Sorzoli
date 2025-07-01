@@ -16,3 +16,11 @@
     justify-content: center;
     align-items:($horizontal-align);
 }
+
+@mixin grid($rows,$columns,$gap,$alignment){
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+    gap:$gap;
+    place-items: $alignment;
+}

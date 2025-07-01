@@ -69,7 +69,7 @@
                 </article>
                 <article id="article-form" class="col order-sm-1 p-0 m-0">
                     <!-- Formulario de contacto -->
-                    <form action="/submit" method="post">
+                    <form action="/submit" method="post" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Ingreso de datos personales -->
                         <label for="nombre-y-apellido">Nombre y Apellido:</label>
                         <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" placeholder="Tu nombre y Apellido">
@@ -80,29 +80,29 @@
                         <label for="consulta">Consulta:</label>
                         <textarea type="text" name="consulta" id="consulta" placeholder="Escribime tu consulta, pongamonos en contacto "></textarea>
                         <!-- Boton de Enviar -->
-                        <input data-aos="zoom-in" data-aos-duration="500" data-aos-delay="2000" type="submit" value="Enviar consulta">
+                        <input data-aos="zoom-in" data-aos-duration="500" data-aos-delay="1000" type="submit" value="Enviar consulta">
                     </form>
                 </article>
                 <!-- Articulo de descripcion de contacto -->
             </section>
         </main>
         <!-- Footer -->
-        <footer>
+        <footer class="footer">
             <!-- Lista de enlaces -->
-             <nav class="container-fluid">
-                <ul id="footer-list" class="px-0">
+            <nav class="footer__nav container-fluid">
+                <ul class="px-0 footer__nav__list">
                     <li><a href="">Consultas</a></li>
                     <li><a href="">Presupuestos</a></li>
                     <li><a href="">Legal</a></li>
                 </ul>
                 <!-- Redes sociales -->
-                <ul id="social-media" class="px-0">
+                <ul class="px-0 footer__nav__social-media">
                     <li><a href="">Behance</a></li>
                     <li><a href="">Artstation</a></li>
                     <li><a href="">LinkedIn</a></li>
                 </ul>
                 <!-- Legales -->
-                <div id="legals">
+                <div class="footer__nav__legals">
                     <p>Copyright © 2025. Todos los derechos reservados</p>
                 </div>
             </nav>

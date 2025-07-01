@@ -7,11 +7,11 @@ main{
             float:right;
             background-color: $bg-main-color;
             h1 {
-                @include text-set (4em,5rem,$text-color-terciary,left,initial);
+                @include text-set (4em,1.5em,$text-color-terciary,left,initial);
                 padding:.7em 0 0 5%;
             }
             p{
-                @include text-set (1.3em,2rem,$text-color-terciary,left,initial);
+                @include text-set (1.3em,1.5em,$text-color-terciary,left,initial);
                 padding: 0 25% 0 5%;
             }
         }
@@ -24,14 +24,12 @@ main{
             #contact{
                 padding-bottom:2em;
                 h1{
-                    font-size:2.5em;
-                    text-align: center;
+                    @include text-set (2.5em,1em,$text-color-terciary,center,initial);
                     padding: 1em;
                     margin:0;
                 }
                 p{
-                    padding-bottom:2em;
-                    font-size: 1em;
+                    @include text-set (1em,1.5em,$text-color-terciary,left,initial);
                     padding: 0 2em 2em 2em;
                 }
             }

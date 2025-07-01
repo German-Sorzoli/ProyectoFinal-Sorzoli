@@ -13,7 +13,7 @@
                 .carousel-image{
                     background-size:cover;
                     background-position: center;
-                    height:80vh;
+                    height:$main-height;
                 }
                 #carousel-img-01{
                     background-image: url(../images/landing-01.jpg);
@@ -25,15 +25,15 @@
                     background-image: url(../images/landing-03.jpg);
                 }
                 .carousel-text{
-                    color:$text-color-Primary;
+                    color:$text-color-primary;
                     @include flex(left);
-                    height:80vh;
+                    height:$main-height;
                     h1,h2 {
-                        @include text-set (5em,5rem,$text-color-Primary,left,bold);
+                        @include text-set (5em,5rem,$text-color-primary,left,bold);
                         padding: 0 20% 1rem 5vw;
                     }
                     h3 {
-                        @include text-set (1.5em,2rem,$text-color-Primary,left,regular);
+                        @include text-set (1.5em,2rem,$text-color-primary,left,regular);
                         padding: 0 20% 1rem 5vw;
                     }
                 }
@@ -59,11 +59,11 @@
                 .carousel-block{
                     .carousel-half{
                         h1,h2 {
-                            @include text-set (4em,4rem,$text-color-Primary,center,regular);
+                            @include text-set (4em,4rem,$text-color-primary,center,regular);
                             padding:1em;
                         }
                         h3 {
-                            @include text-set (1em,2rem,$text-color-Primary,center,300);
+                            @include text-set (1em,2rem,$text-color-primary,center,300);
                             padding:0 2em 1em 2em;
                             text-wrap: stable;
                         }
@@ -92,10 +92,10 @@
                         box-sizing: border-box;
                         height:auto;
                         h1,h2 {
-                            @include text-set (3em,3rem,$text-color-Primary,center,regular);
+                            @include text-set (3em,3rem,$text-color-primary,center,regular);
                         }
                         h3 {
-                            @include text-set (1em,1.5rem,$text-color-Primary,center,300);
+                            @include text-set (1em,1.5rem,$text-color-primary,center,300);
                             padding-bottom:4em;
                         }
                     }

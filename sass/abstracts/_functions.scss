@@ -1,0 +1,9 @@
+//FUNCTIONS
+
+$sizes: 80vh, 70vh;
+
+@each $size in $sizes {
+  .height-#{$size} {
+    height: $size;
+  }
+}
