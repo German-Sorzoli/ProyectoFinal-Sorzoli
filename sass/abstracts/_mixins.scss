@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 //MIXIN
 
 @mixin text-set ($size, $line, $color, $align, $weight){
@@ -6,4 +8,11 @@
     color:$color;
     text-align: $align;
     font-weight: $weight;
+}
+
+@mixin flex($horizontal-align){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:($horizontal-align);
 }

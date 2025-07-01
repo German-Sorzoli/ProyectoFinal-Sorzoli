@@ -1,6 +1,5 @@
 /*Estilos de CONTACT*/
-@use "../abstracts/variables" as *;
-@import "../abstracts/mixins";
+@use "../abstracts" as *;
 main{
     #form-section{
         #contact{
@@ -12,94 +11,30 @@ main{
                 padding:.7em 0 0 5%;
             }
             p{
-                @include text-set (1em,2rem,$text-color-terciary,left,initial);
+                @include text-set (1.3em,2rem,$text-color-terciary,left,initial);
                 padding: 0 25% 0 5%;
-            }
-        }
-        #article-form{
-            display: block;
-            float:left;
-            background-color: $primary-color;
-            width:50%;
-            height:80vh;
-            form{
-                width:60%;
-                display: block;
-                float:right;
-                padding-right:50px;
-                padding-top: 40px;
-                input, select {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                color:$text-color-secondary;
-                }
-                input[type=submit]{
-                    margin-top:40px;
-                    background-color:$logo-color;
-                    color:$text-color-Primary;
-                    font-weight: 500;
-                    width: 40%;
-                    min-width: 200px;
-                    display: block;
-                    float: right;
-                }
-                label{
-                    font-size:.8em;
-                    color: $text-color-Primary;
-                }
-                textarea{
-                    height:25vh;
-                    width:100%;
-                    padding: 12px 20px;
-                    margin: 8px 0;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    box-sizing: border-box;
-                    color:$text-color-secondary;
-                }
             }
         }
     }
 }
 /*Media Query de CONTACT*/
 @media only screen and (max-width: 992px) {
-main{
-    #form-section{
-        #contact{
-            padding-bottom:2em;
-            h1{
-                font-size:2.5em;
-                text-align: center;
-                padding: 1em;
-                margin:0;
-            }
-            p{
+    main{
+        #form-section{
+            #contact{
                 padding-bottom:2em;
-                font-size: 1em;
-                padding: 0 2em 2em 2em;
-            }
-        }
-        #article-form{
-            form{
-                width: 100%;
-                height: auto;
-                padding:1em;
-                input[type=submit]{
-                    margin: 2em 0;
-                    width: 100%;
-                    }
+                h1{
+                    font-size:2.5em;
+                    text-align: center;
+                    padding: 1em;
+                    margin:0;
+                }
+                p{
+                    padding-bottom:2em;
+                    font-size: 1em;
+                    padding: 0 2em 2em 2em;
                 }
             }
         }
-    }
-}
-@media only screen and (max-width: 576px){
-#article-form{
-    height:auto;
     }
 }

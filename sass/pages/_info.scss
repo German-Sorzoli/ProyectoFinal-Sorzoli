@@ -1,5 +1,5 @@
 /*Estilos de ACERCA DE MI*/
-@use "../abstracts/variables" as *;
+@use "../abstracts" as *;
 .personal-info{
     width:100%;
     .personal-info__about-me {
@@ -38,7 +38,7 @@
             grid-column:2/3;
         }
         .story{
-            font-size:.7em;
+            font-size:.8em;
             padding: 0 2rem;
             align-self:self-start;
         }
@@ -69,8 +69,8 @@
                 position: static;
             }
             h2{
-                font-size:1em;
-                line-height:1em;
+                font-size:1.5em;
+                line-height:1.5em;
                 padding:1em 2em;
                 text-align: center;
                 grid-row:2;
@@ -83,10 +83,10 @@
             #story-02{
                 grid-row:5;
                 grid-column:1;
-                padding-bottom:5em;
+                padding-bottom:8em;
             }
             img{
-                width:70%;
+                width:40%;
                 grid-row:3;
                 grid-column:1;
                 align-self:center;
@@ -94,9 +94,25 @@
                 padding: 1em 2em;
             }
             .story{
-                font-size:.9em;
-                padding:2em;
-                line-height: 1em;
+                font-size:1em;
+                line-height: 1.5rem;
+                padding:3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .personal-info{
+        .personal-info__about-me {
+            #story-02{
+                padding-bottom:5em;
+            }
+            img{
+                width:70%;
+            }
+            .story{
+                padding:2rem;
             }
         }
     }

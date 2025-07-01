@@ -1,114 +1,22 @@
 /*Estilos de MAIN*/
-@use "../abstracts/variables" as *;
-@import "../abstracts/mixins";
+@use "../abstracts" as *;
 .main-info{
     height:auto;
     section{
         height:80vh;
         article{
             height:80vh;
-            .carousel-block{
-                width:100%;
-                .carousel-half{
-                    float: left;
-                    width:50%;
-                    height:100%;
-                }
-                .carousel-image{
-                    background-size:cover;
-                    background-position: center;
-                    height:80vh;
-                }
-                #carousel-img-01{
-                    background-image: url(../images/landing-01.jpg);
-                }
-                #carousel-img-02{
-                    background-image: url(../images/landing-02.jpg);
-                }
-                #carousel-img-03{
-                    background-image: url(../images/landing-03.jpg);
-                }
-                .carousel-text{
-                    color:$text-color-Primary;
-                    display:flex;
-                    flex-direction: column;
-                    justify-content:center;
-                    height:80vh;
-                    h1,h2 {
-                        @include text-set (5em,5rem,$text-color-Primary,left,bold);
-                        padding: 0 20% 1rem 5vw;
-                    }
-                    h3 {
-                        @include text-set (1.5em,2rem,$text-color-Primary,left,regular);
-                        padding: 0 20% 1rem 5vw;
-                    }
-                }
-                #carousel-txt-01{
-                    background-color: $primary-color;
-                }
-                #carousel-txt-02{
-                    background-color: $secondary-color;
-                }
-                #carousel-txt-03{
-                    background-color: $terciary-color;
-                }
-            }
         }
     }
 }
 
 /*Media Query MAIN*/
-@media only screen and (max-width: 992px) {
-    .main-info{
-        section{
-            height: 80vh;
-            article{
-                .carousel-block{
-                    .carousel-half{
-                        h1,h2 {
-                            @include text-set (4em,4rem,$text-color-Primary,center,regular);
-                            padding:1em;
-                        }
-                        h3 {
-                            @include text-set (1em,2rem,$text-color-Primary,center,300);
-                            padding:0 2em 1em 2em;
-                            text-wrap: stable;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .main-info{
         section{
             height:auto;
             article{
                 height:auto;
-                .carousel-block{
-                    .carousel-half{
-                        width:100%;
-                        height:50%;
-                    }
-                    .carousel-image{
-                        background-size:cover;
-                        background-position: center;
-                        height:30vh;
-                    }
-                    .carousel-text{
-                        box-sizing: border-box;
-                        height:auto;
-                        h1,h2 {
-                            @include text-set (3em,3rem,$text-color-Primary,center,regular);
-                        }
-                        h3 {
-                            @include text-set (1em,1.5rem,$text-color-Primary,center,300);
-                            padding-bottom:4em;
-                        }
-                    }
-                }
             }
         }
     }

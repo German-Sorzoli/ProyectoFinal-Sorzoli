@@ -1,5 +1,5 @@
-/* ----------Estilos de Portfolio---------- */
-@use "../abstracts/variables" as *;
+/* ----------Estilos de PORTFOLIO---------- */
+@use "../abstracts" as *;
 main{
     #section-portfolio{
         display: block;
@@ -49,9 +49,7 @@ main{
             gap:3em;
             height:auto;
             .gallery__img{
-                display: flex;
-                align-items:center;
-                justify-content:center;
+                @include flex(center);
                 img{
                     width:80%;
                 }

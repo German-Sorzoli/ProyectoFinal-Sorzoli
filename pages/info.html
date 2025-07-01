@@ -4,6 +4,8 @@
     <head>
         <!-- Enlace a Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <!-- AOS Animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Enlace a la hoja de estilos personal -->
         <link rel="stylesheet" href="../css/style.css">
         <!-- Fuentes de Google -->
@@ -61,19 +63,13 @@
             <!-- Seccion de Acerca de mi -->
             <section class="container-fluid p-0 personal-info__about-me">
                 <!-- Contenido de Acerca de mi -->
-                <h1>Acerca de mi</h1>
-                <h2>Subtitulo descriptivo  elit, sed diam nonummy nibh euismod tinci.</h2>
+                <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">Acerca de mi</h1>
+                <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">Diseñador Gráfico, Web, 3D, autodidacta,<br>en constante crecimiento.</h2>
                 <!-- Parrafo n°1 -->
-                <p class="story m-0" id="story-01">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-                </p> 
+                <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" class="story m-0" id="story-01">Nací en Buenos Aires, Argentina, y desde muy joven sentí una profunda curiosidad por las artes plásticas: pintura, arquitectura y escultura siempre despertaron mi interés, inspirándome a explorar distintas formas de expresión visual.<br><br>Mi formación académica se enfoca en el Diseño y la Comunicación. Estudié en la Nueva Escuela de Diseño y Comunicación, donde obtuve el título de Técnico en Diseño y Comunicación Visual, y posteriormente completé la especialización en Diseño Web.</p>
                 <!-- Parrafo n°2 -->
-                <p class="story m-0" id="story-02">
-                Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hetrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinc ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse mo</p>
-                <img src="../images/Profile-01.jpg" alt="Germán Sorzoli - Diseñador Gráfico">   
+                <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1200" class="story m-0" id="story-02">A lo largo de los años he complementado mis estudios con diversas formaciones en Motion Graphics, programación, y diseño y modelado 3D, abarcando tanto el enfoque artístico como el técnico.<br><br> Me mantengo en constante evolución, perfeccionando mis habilidades, ampliando mis conocimientos y acumulando experiencias para ofrecer siempre un trabajo de alta calidad, funcional y creativo.</p>
+                <img data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500" src="../images/Profile-01.jpg" alt="Germán Sorzoli - Diseñador Gráfico">   
             </section>
         </main>
         <!-- Footer -->
@@ -99,5 +95,8 @@
         </footer>
         <!-- Script de Bootstrap CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        <!-- Script de AOS Animations -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

@@ -1,6 +1,8 @@
 //Reset
-@import "base";
-//Estilos de layout
-@import "layout";
+@use "base";
 //Estilos de pages
-@import "pages";
+@use "pages";
+//Estilos de layout
+@use "layout";
+//Components
+@use "components";

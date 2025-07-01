@@ -1,0 +1,79 @@
+/*Estilos de FORM*/
+@use "../abstracts" as *;
+main{
+    #form-section{
+        #article-form{
+            display: block;
+            float:left;
+            background-color: $primary-color;
+            width:50%;
+            height:80vh;
+            form{
+                width:60%;
+                display: block;
+                float:right;
+                padding-right:50px;
+                padding-top: 40px;
+                input, select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                color:$text-color-secondary;
+                }
+                input[type=submit]{
+                    margin-top:40px;
+                    background-color:$logo-color;
+                    color:$text-color-Primary;
+                    font-weight: 500;
+                    width: 40%;
+                    min-width: 200px;
+                    display: block;
+                    float: right;
+                }
+                label{
+                    font-size:.8em;
+                    color: $text-color-Primary;
+                }
+                textarea{
+                    height:25vh;
+                    width:100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    color:$text-color-secondary;
+                }
+            }
+        }
+    }
+}
+
+/*Media Query de FORM*/
+@media only screen and (max-width: 992px) {
+main{
+    #form-section{
+        #article-form{
+            form{
+                width: 100%;
+                height: auto;
+                padding:2em;
+                input[type=submit]{
+                    margin: 1.5em 0;
+                    width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+#article-form{
+    height:auto;
+    }
+}
