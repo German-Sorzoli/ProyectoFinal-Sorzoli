@@ -2,8 +2,8 @@
 @use "../abstracts" as *;
 header{
     .navbar--height{
-        height: 12vh;
-        min-height: 10vh;
+        height: 10vh;
+        min-height: 80px;
         div{
             .my-name {
             font-family: "Oswald", sans-serif;
@@ -17,6 +17,9 @@ header{
                     height:20px;
                     width:30px;
                     }
+                }
+                :hover{
+                    text-decoration: underline;
                 }
             }
         }

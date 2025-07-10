@@ -72,8 +72,12 @@ main{
     }
 }
 
-@media only screen and (max-width: 576px){
-#article-form{
-    height:auto;
+@media only screen and (max-width: 610px){
+main{
+    #form-section{
+        #article-form{
+            height:auto;
+            }
+        }
     }
 }

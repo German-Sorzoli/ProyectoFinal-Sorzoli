@@ -9,7 +9,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         background-color: white;
         h1{
-            @include text-set (4em,2em,$text-color-terciary,left,initial);
+            @include text-set (4em,1.5em,$text-color-terciary,left,initial);
             margin:0;
             padding:0;
             grid-row:1;
@@ -35,8 +35,8 @@
             grid-column:2/3;
         }
         .story{
-            @include text-set (0.8em,1.5em,$text-color-terciary,left,initial);
-            padding: 0 2em;
+            @include text-set (1em,1.5em,$text-color-terciary,left,initial);
+            padding: 0 3em 0 0;
             align-self:self-start;
         }
         img{
@@ -49,6 +49,18 @@
     }
 }
 /*Media Query de ACERCA DE MI*/
+
+@media only screen and (max-width: 1270px) {
+    .personal-info{
+        .personal-info__about-me {
+            .story{
+                @include text-set (.8em,1.5em,$text-color-terciary,left,initial);
+                padding:3em;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .personal-info{
         .personal-info__about-me {
@@ -77,6 +89,7 @@
             #story-02{
                 grid-row:5;
                 grid-column:1;
+                padding-top: 0;
                 padding-bottom:8em;
             }
             img{
