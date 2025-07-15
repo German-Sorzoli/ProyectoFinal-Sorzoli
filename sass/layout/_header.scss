@@ -6,10 +6,7 @@ header{
         min-height: 80px;
         div{
             .my-name {
-            font-family: "Oswald", sans-serif;
-            text-transform:uppercase;
             line-height: 1.3em;
-            color:$logo-color;
             }
             ul{
                 li{
@@ -18,13 +15,41 @@ header{
                     width:30px;
                     }
                 }
-                :hover{
-                    text-decoration: underline;
-                }
             }
         }
         #navbarSupportedContent{
             z-index: 1050;
+            ul{
+                li{
+                    a{
+                        img{
+                            width:30px;
+                        }
+                    }
+                }
+                &:not(.dropdown){
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &.dropdown{
+                    .dropdown-menu{
+                        background-color: white;
+                        border: none;
+                        border-radius: 0px;
+                        border-width: 0px;
+                        .dropdown-item {
+                            color: $text-color-secondary;
+                            text-align: center;
+                            padding: 10px 20px;
+                            &:hover {
+                            background-color: $bg-footer-color;
+                            text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }    
         }
     }
 }
