@@ -53,10 +53,13 @@ main{
  }
 /*Media Query de PORTFOLIO*/
 
- @media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {
     main{
         #section-portfolio{
             .work-description{
+                h2{
+                    @include text-set (2em,2em,$text-color-terciary,center,initial);
+                }
                 p{
                     @include text-set (.8em,1.5em,$text-color-terciary,center,initial);
                     width:100%;

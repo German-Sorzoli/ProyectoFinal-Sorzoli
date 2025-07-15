@@ -7,6 +7,14 @@
 
 body {
   overflow-x: hidden;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /*Estilos de ACERCA DE MI*/
@@ -127,7 +135,7 @@ body {
     grid-row: 5;
     grid-column: 1;
     padding-top: 0;
-    padding-bottom: 8em;
+    padding-bottom: 3em;
   }
   .personal-info .personal-info__about-me img {
     width: 40%;
@@ -228,6 +236,13 @@ main #section-gallery .article-gallery__img img {
 
 /*Media Query de PORTFOLIO*/
 @media only screen and (max-width: 1300px) {
+  main #section-portfolio .work-description h2 {
+    font-size: 2em;
+    line-height: 2em;
+    color: rgb(31, 31, 31);
+    text-align: center;
+    font-weight: initial;
+  }
   main #section-portfolio .work-description p {
     font-size: 0.8em;
     line-height: 1.5em;
@@ -395,6 +410,10 @@ header .navbar--height #navbarSupportedContent ul.dropdown .dropdown-menu .dropd
   text-decoration: none;
 }
 
+.container .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item:active {
+  background-color: rgb(46, 136, 136) !important;
+}
+
 /*Estilos de MAIN*/
 .main-info {
   height: auto;
@@ -419,12 +438,10 @@ header .navbar--height #navbarSupportedContent ul.dropdown .dropdown-menu .dropd
 .footer {
   width: 100%;
   height: 5vh;
-  min-height: 50px;
+  min-height: 45px;
   padding: 0 15% 0 15%;
   background-color: rgb(218, 218, 218);
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  overflow: hidden;
 }
 .footer__nav {
   display: block;
@@ -468,16 +485,10 @@ header .navbar--height #navbarSupportedContent ul.dropdown .dropdown-menu .dropd
 }
 
 /*Media Query de FOOTER*/
-@media only screen and (max-width: 992px) {
-  .footer {
-    position: fixed;
-  }
-}
 @media only screen and (max-width: 768px) {
   .footer {
     display: block;
     float: left;
-    position: static;
     height: auto;
     padding: 5% 0 0 0;
   }

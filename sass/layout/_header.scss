@@ -43,13 +43,30 @@ header{
                             text-align: center;
                             padding: 10px 20px;
                             &:hover {
-                            background-color: $bg-footer-color;
-                            text-decoration: none;
+                                background-color: $bg-footer-color;
+                                text-decoration: none;
                             }
                         }
                     }
                 }
             }    
+        }
+    }
+}
+
+//estilo que reemplaza al original de bootstrap
+.container{
+    .navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                .dropdown{
+                    .dropdown-menu{
+                        .dropdown-item:active {
+                            background-color: $primary-color !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }
