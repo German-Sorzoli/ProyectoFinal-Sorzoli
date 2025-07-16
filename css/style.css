@@ -233,6 +233,10 @@ main #section-gallery .article-gallery__img img {
   width: 100%;
   object-fit: cover;
 }
+main #section-gallery .article-gallery__img img:hover {
+  opacity: 0.7;
+  background-color: rgb #17a787;
+}
 
 /*Media Query de PORTFOLIO*/
 @media only screen and (max-width: 1300px) {
@@ -343,6 +347,15 @@ main #form-section #contact p {
   text-align: left;
   font-weight: initial;
   padding: 0 25% 0 5%;
+  margin: 0;
+}
+main #form-section #contact #contact-data {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  color: rgb(31, 31, 31);
+  text-align: left;
+  font-weight: initial;
+  padding-top: 70px;
 }
 
 /*Media Query de CONTACT*/
@@ -365,7 +378,15 @@ main #form-section #contact p {
     color: rgb(31, 31, 31);
     text-align: left;
     font-weight: initial;
-    padding: 0 2em 2em 2em;
+    padding: 0 2em;
+  }
+  main #form-section #contact #contact-data {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: rgb(31, 31, 31);
+    text-align: left;
+    font-weight: initial;
+    padding: 50px 2em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -442,6 +463,9 @@ header .navbar--height #navbarSupportedContent ul.dropdown .dropdown-menu .dropd
   padding: 0 15% 0 15%;
   background-color: rgb(218, 218, 218);
   overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .footer__nav {
   display: block;
@@ -489,6 +513,7 @@ header .navbar--height #navbarSupportedContent ul.dropdown .dropdown-menu .dropd
   .footer {
     display: block;
     float: left;
+    position: static;
     height: auto;
     padding: 5% 0 0 0;
   }

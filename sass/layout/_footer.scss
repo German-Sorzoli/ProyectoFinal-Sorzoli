@@ -7,6 +7,9 @@
     padding: 0 15% 0 15%;
     background-color:$bg-footer-color;
     overflow: hidden;
+    position:fixed;
+    bottom:0;
+    left:0;
     &__nav {
         display:block;
         ul {
@@ -52,15 +55,11 @@
 
 /*Media Query de FOOTER*/
 
-@media only screen and (max-width: 992px) {
-    .footer {
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .footer {
         display:block;
         float:left;
+        position:static;
         height:auto;
         padding: 5% 0 0 0;
         &__nav{

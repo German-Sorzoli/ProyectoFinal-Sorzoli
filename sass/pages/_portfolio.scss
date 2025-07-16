@@ -47,6 +47,10 @@ main{
                     width:100%;
                     object-fit: cover;
                 }
+                img:hover{
+                    opacity:.7;
+                    background-color:rgb #17a787;
+                }
             }
         }
     }
