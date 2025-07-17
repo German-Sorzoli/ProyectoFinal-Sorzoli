@@ -15,9 +15,14 @@ main{
                 padding: 0 25% 0 5%;
                 margin: 0;
             }
-            #contact-data{
+            .contact-icon{
+                width:40px;
+                display:inline;
+                margin-right: 20px;
+            }
+            .contact-data{
                 @include text-set (1.3em,1.4em,$text-color-terciary,left,initial);
-                padding-top:70px;
+                padding-top:10vh;
             }
         }
     }
@@ -37,9 +42,9 @@ main{
                     @include text-set (1em,1.5em,$text-color-terciary,left,initial);
                     padding: 0 2em;
                 }
-                #contact-data{
+                .contact-data{
                     @include text-set (1em,1.5em,$text-color-terciary,left,initial);
-                    padding:50px 2em;
+                    padding:4em 2em;
                 }
             }
         }

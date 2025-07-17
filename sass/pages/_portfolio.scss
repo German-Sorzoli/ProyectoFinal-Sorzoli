@@ -1,4 +1,4 @@
-/* ----------Estilos de PORTFOLIO---------- */
+/*Estilos de PORTFOLIO*/
 @use "../abstracts" as *;
 main{
     #section-portfolio{
@@ -52,6 +52,44 @@ main{
                     background-color:rgb #17a787;
                 }
             }
+        }
+        .article-modals{
+            .modal{
+                padding:0;
+                margin:0;
+                .modal-dialog {
+                    max-height:60vh;
+                    max-width:70vw;
+                    display: flex;
+                    align-items: center;
+                    vertical-align: middle;
+                    img{
+                        width:100%;
+                        height:auto;
+                    }
+                    h4{
+                        background-color:rgba(0,0,0,0.7);
+                        @include text-set (.8em,1em,$text-color-primary,center,initial);
+                        padding:.8em 1.5em;
+                        border-radius: 2em;
+                        position: absolute;
+                        top: 0%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .modal-dialog-square {
+                    width:60%;
+                    max-height:60vh;
+                }
+                .modal-dialog-centered{
+                    height:100vh;
+                    display:flex;
+                    align-items: center;
+                    vertical-align: middle;
+                }
+            }
+
         }
     }
  }
@@ -127,3 +165,15 @@ main{
         }
     }
  }
+
+@media only screen and (max-width: 768px) {
+    main{
+        #section-gallery{
+            .article-gallery{
+                .disabled-on-mobile{
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}

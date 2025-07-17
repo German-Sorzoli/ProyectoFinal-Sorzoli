@@ -70,7 +70,7 @@
                         <br><br><br>
                     </p>
                 </article>
-                <!-- Articulo de trabajo particular -->
+                <!-- Articulo de descripcion de los trabajos -->
                 <article class="work-description">
                     <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">Claridad ante todo</h2>
                     <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700">Diseños concisos y claros, priorizando siempre el mensaje a comunicar. Cada pieza se estiliza en función del contexto, respetando la identidad del proyecto o campaña. El enfoque está puesto en la coherencia visual, funcionalidad y estética. </p>
@@ -80,17 +80,48 @@
             <section id="section-gallery" class="col-md-6 m-0 p-0">
                 <!-- Articulo con las imagenes del Portfolio-->
                 <article class="article-gallery">
-                    <a href="../images/gallery-01-lg.jpg" target="_blank" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="article-gallery__img"><img src="../images/gallery-01.jpg" alt="Diseño web - Viñedos"></a>
-                    <a href="../images/gallery-02-lg.jpg" target="_blank" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" class="article-gallery__img"><img src="../images/gallery-02.jpg" alt="Modelado 3D - Escena Living"></a>
-                    <a href="../images/gallery-03-lg.jpg" target="_blank" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" class="article-gallery__img"><img src="../images/gallery-03.jpg" alt="Modelado 3D - Vino"></a>
-                    <a href="../images/gallery-04-lg.jpg" target="_blank" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" class="article-gallery__img"><img src="../images/gallery-04.jpg" alt="Diseño Gráfico - Editorial"></a>
+                    <a href="../images/gallery-01-lg.jpg" data-bs-toggle="modal" data-bs-target="#gallery-01" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="article-gallery__img disabled-on-mobile"><img src="../images/gallery-01.jpg" alt="Diseño web - Viñedos"></a>
+                    <a href="../images/gallery-02-lg.jpg" data-bs-toggle="modal" data-bs-target="#gallery-02" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" class="article-gallery__img disabled-on-mobile"><img src="../images/gallery-02.jpg" alt="Modelado 3D - Escena Living"></a>
+                    <a href="../images/gallery-03-lg.jpg" data-bs-toggle="modal" data-bs-target="#gallery-03" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" class="article-gallery__img disabled-on-mobile"><img src="../images/gallery-03.jpg" alt="Modelado 3D - Vino"></a>
+                    <a href="../images/gallery-04-lg.jpg" data-bs-toggle="modal" data-bs-target="#gallery-04" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" class="article-gallery__img disabled-on-mobile"><img src="../images/gallery-04.jpg" alt="Diseño Gráfico - Editorial"></a>
+                </article>
+                <!-- Articulo con los Modals de Bootstrap -->
+                <article class="article-modals d-none d-md-flex">
+                    <div class="modal fade" id="gallery-01" tabindex="-1" aria-labelledby="gallery-01" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-square modal-dialog-centered">
+                                <img src="../images/gallery-01-lg.jpg" alt="Luminis viñedos y bodegas" class="img-fluid">
+                                <h4>Diseño Web - Luminis viñedos y bodegas</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="gallery-02" tabindex="-1" aria-labelledby="gallery-02" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                                <img src="../images/gallery-02-lg.jpg" alt="Luminis viñedos y bodegas" class="img-fluid">
+                                <h4>Diseño 3D - Diseño de interiores<</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="gallery-03" tabindex="-1" aria-labelledby="gallery-03" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                                <img src="../images/gallery-03-lg.jpg" alt="Luminis viñedos y bodegas" class="img-fluid">
+                                <h4>Diseño Gráfico 3D - Vinos Alado</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="gallery-04" tabindex="-1" aria-labelledby="gallery-04" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-square modal-dialog-centered">
+                                <img src="../images/gallery-04-lg.jpg" alt="Luminis viñedos y bodegas" class="img-fluid">
+                                <h4>Diseño Editorial - Nota periodística</h4>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>
         <!-- Footer -->
         <footer class="footer container-fluid">
             <!-- Lista de enlaces -->
-            <nav class="footer__nav row m-0 p-0">
+            <nav class="footer__nav row">
                 <!-- Redes sociales -->
                 <ul class="px-0 footer__nav__social-media col order-sm-1">
                     <li><a href="https://www.behance.net/germansorzoli" target="_blank"><img class="social-link" src="../images/social_behance.png" alt="Behance"></a></li>

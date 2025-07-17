@@ -17,7 +17,7 @@ main {
   flex: 1;
 }
 
-/*Estilos de ACERCA DE MI*/
+/*Estilos de INFO*/
 .height-80vh {
   height: 80vh;
 }
@@ -87,7 +87,7 @@ main {
   justify-self: right;
 }
 
-/*Media Query de ACERCA DE MI*/
+/*Media Query de INFO*/
 @media only screen and (max-width: 1270px) {
   .personal-info .personal-info__about-me .story {
     font-size: 0.8em;
@@ -119,7 +119,7 @@ main {
   }
   .personal-info .personal-info__about-me h2 {
     font-size: 1.5em;
-    line-height: 1.5em;
+    line-height: 1.2em;
     color: rgb(31, 31, 31);
     text-align: center;
     font-weight: initial;
@@ -135,7 +135,7 @@ main {
     grid-row: 5;
     grid-column: 1;
     padding-top: 0;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
   }
   .personal-info .personal-info__about-me img {
     width: 40%;
@@ -155,6 +155,13 @@ main {
   }
 }
 @media only screen and (max-width: 768px) {
+  .personal-info .personal-info__about-me h2 {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    color: rgb(31, 31, 31);
+    text-align: center;
+    font-weight: initial;
+  }
   .personal-info .personal-info__about-me #story-02 {
     padding-bottom: 5em;
   }
@@ -165,7 +172,7 @@ main {
     padding: 2em;
   }
 }
-/* ----------Estilos de PORTFOLIO---------- */
+/*Estilos de PORTFOLIO*/
 main #section-portfolio {
   display: block;
   float: left;
@@ -236,6 +243,45 @@ main #section-gallery .article-gallery__img img {
 main #section-gallery .article-gallery__img img:hover {
   opacity: 0.7;
   background-color: rgb #17a787;
+}
+main #section-gallery .article-modals .modal {
+  padding: 0;
+  margin: 0;
+}
+main #section-gallery .article-modals .modal .modal-dialog {
+  max-height: 60vh;
+  max-width: 70vw;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+main #section-gallery .article-modals .modal .modal-dialog img {
+  width: 100%;
+  height: auto;
+}
+main #section-gallery .article-modals .modal .modal-dialog h4 {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 0.8em;
+  line-height: 1em;
+  color: white;
+  text-align: center;
+  font-weight: initial;
+  padding: 0.8em 1.5em;
+  border-radius: 2em;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #section-gallery .article-modals .modal .modal-dialog-square {
+  width: 60%;
+  max-height: 60vh;
+}
+main #section-gallery .article-modals .modal .modal-dialog-centered {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 /*Media Query de PORTFOLIO*/
@@ -326,6 +372,11 @@ main #section-gallery .article-gallery__img img:hover {
     width: 80%;
   }
 }
+@media only screen and (max-width: 768px) {
+  main #section-gallery .article-gallery .disabled-on-mobile {
+    pointer-events: none;
+  }
+}
 /*Estilos de CONTACT*/
 main #form-section #contact {
   display: block;
@@ -349,13 +400,18 @@ main #form-section #contact p {
   padding: 0 25% 0 5%;
   margin: 0;
 }
-main #form-section #contact #contact-data {
+main #form-section #contact .contact-icon {
+  width: 40px;
+  display: inline;
+  margin-right: 20px;
+}
+main #form-section #contact .contact-data {
   font-size: 1.3em;
   line-height: 1.4em;
   color: rgb(31, 31, 31);
   text-align: left;
   font-weight: initial;
-  padding-top: 70px;
+  padding-top: 10vh;
 }
 
 /*Media Query de CONTACT*/
@@ -380,13 +436,13 @@ main #form-section #contact #contact-data {
     font-weight: initial;
     padding: 0 2em;
   }
-  main #form-section #contact #contact-data {
+  main #form-section #contact .contact-data {
     font-size: 1em;
     line-height: 1.5em;
     color: rgb(31, 31, 31);
     text-align: left;
     font-weight: initial;
-    padding: 50px 2em;
+    padding: 4em 2em;
   }
 }
 @media only screen and (max-width: 767px) {
