@@ -228,6 +228,20 @@ Nulo:
 No es posible corregir este criterio pues no se encuentra en el Proyecto Final.
 ```
 
+### Calificación de entrega final:
+```
+Status de tu entrega:
+Aprobado
+
+- 06 de agosto del 2025 a las 00:28 hs
+
+¡Felicitaciones! Tu calificación final es **10**.
+
+Coderhouse
+06/ago/2025 00:28
+Hola!!! como estas?! se notan, los avances del primer desafio a este. Marco los puntos claves de esta entrega: - HTML: optimo - CSS: optimo - FLEX/GRID: optimo - mediaQueries: optimo - BT: optimo - SASS: optimo - git/github: optimo - estilos: en general son correctos, se trabajan de manera optima y se adaptan a la tematica de tu proyecto. a seguir por aca! Buen año, seguimos en contacto por lkdin Saludos!
+```
+
 ## Pre-entrega n°3:
 
 ### Consigna de pre-entrega n°3
